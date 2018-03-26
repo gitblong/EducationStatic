@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+testMax-Class: view.UserInputView
+Main-Class: view.UserInputView
+
