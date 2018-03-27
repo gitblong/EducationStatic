@@ -184,7 +184,7 @@ public class DataBase {
                             }
                         } else {
                             if (k == 0) {
-                                if (stringCellValue=="全市") {
+                                if (stringCellValue.equals("全市")) {
                                     cityIndex = j-1;
                                 }
                                 labelValues[j - 1] = stringCellValue;

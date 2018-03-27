@@ -102,14 +102,14 @@ public class MultiBar {
         rangeAxis.setTickLabelFont(xfont);
         double maxRange = multiBarEntity.getMaxValue();
         if (multiBarEntity.getModel() == 1) {
-            rangeAxis.setTickUnit(new NumberTickUnit(0.1));
+//            rangeAxis.setTickUnit(new NumberTickUnit(0.1));
             rangeAxis.setNumberFormatOverride(NumberFormat.getPercentInstance());//设置Y轴%显示
             maxRange = maxRange + 0.1;
             if (maxRange > 1) {
                 maxRange = 1;
             }
         } else{
-            rangeAxis.setTickUnit(new NumberTickUnit(10));
+//            rangeAxis.setTickUnit(new NumberTickUnit(10));
             maxRange = maxRange + 10;
         }
         categoryAxis.setCategoryLabelPositions(CategoryLabelPositions.UP_45);

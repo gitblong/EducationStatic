@@ -47,9 +47,9 @@ public class BubbleChartDemo1 extends ApplicationFrame {
      * @return The chart.
      */
     private static JFreeChart createChart(XYZDataset dataset) {
-        JFreeChart chart = ChartFactory.createBubbleChart(
-                "Bubble Chart Demo 1", "X", "Y", dataset,
-                PlotOrientation.HORIZONTAL, true, true, false);
+
+        JFreeChart chart = ChartFactory.createScatterPlot("Scatter Plot Demo 1",
+                "X", "Y", dataset, PlotOrientation.VERTICAL, true, true, false);
         XYPlot plot = (XYPlot) chart.getPlot();
         plot.setForegroundAlpha(0.65f);
         plot.setDomainPannable(true);

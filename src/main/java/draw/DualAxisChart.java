@@ -112,7 +112,7 @@ public class DualAxisChart {
         plot.setRangeAxis(1, axis2);
         //设置Y轴刻度间距为10
         NumberAxis rangeAxis1 = new NumberAxis();
-        rangeAxis1.setTickUnit(new NumberTickUnit(10));
+//        rangeAxis1.setTickUnit(new NumberTickUnit(10));
         plot.setRangeAxis(rangeAxis1);
 
         //设置柱状图Y轴范围

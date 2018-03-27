@@ -1,6 +1,6 @@
 package output;
 
-import draw.ScatterChart;
+import draw.BubbleChart;
 import draw.StackBarChart;
 import entity.ScatterEntity;
 import entity.StackBarEntity;
@@ -43,7 +43,7 @@ public class OutputImage {
      */
     public static String outPutScatterChar(ScatterEntity scatterEntity) throws Exception {
         createPath();
-        JFreeChart jFreeChart = ScatterChart.drawScatterChart(scatterEntity);
+        JFreeChart jFreeChart = BubbleChart.drawScatterChart(scatterEntity);
         String filePath = imagePath + System.currentTimeMillis()+".png";
         OutputStream os = new FileOutputStream(filePath);
         ChartUtilities.writeChartAsPNG(os,jFreeChart,500,270);

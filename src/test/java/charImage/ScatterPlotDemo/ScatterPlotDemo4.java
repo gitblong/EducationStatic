@@ -66,7 +66,8 @@ public class ScatterPlotDemo4 extends ApplicationFrame {
 
 
         NumberAxis domainAxis = (NumberAxis) plot.getDomainAxis();
-
+        domainAxis.setAxisLineVisible(true);
+        domainAxis.setAxisLinePaint(Color.BLUE);
 //        domainAxis.setAutoRangeIncludesZero(false);
 //        plot.getRangeAxis().setInverted(true);
         return new ChartPanel(chart);

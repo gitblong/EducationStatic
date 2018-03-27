@@ -7,20 +7,21 @@
 
 package charImage.ScatterPlotDemo;
 
+import java.awt.BasicStroke;
+import java.awt.Color;
+
+import javax.swing.JPanel;
+
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
 import org.jfree.chart.axis.NumberAxis;
 import org.jfree.chart.plot.PlotOrientation;
 import org.jfree.chart.plot.XYPlot;
-import org.jfree.chart.renderer.xy.XYItemRenderer;
 import org.jfree.chart.renderer.xy.XYLineAndShapeRenderer;
 import org.jfree.data.xy.XYDataset;
 import org.jfree.ui.ApplicationFrame;
 import org.jfree.ui.RefineryUtilities;
-
-import javax.swing.*;
-import java.awt.*;
 
 /**
  * A demo scatter plot.
@@ -44,29 +45,22 @@ public class ScatterPlotDemo1 extends ApplicationFrame {
                 "X", "Y", dataset, PlotOrientation.VERTICAL, true, true, false);
 
         XYPlot plot = (XYPlot) chart.getPlot();
+        plot.setNoDataMessage("NO DATA");
 
-//        plot.setNoDataMessage("NO DATA");
-//
-//        plot.setDomainPannable(true);
-//        plot.setRangePannable(true);
-//        plot.setDomainZeroBaselineVisible(true);
-//        plot.setRangeZeroBaselineVisible(true);
-//
-//        plot.setDomainGridlineStroke(new BasicStroke(0.0f));
-//        plot.setDomainMinorGridlineStroke(new BasicStroke(0.0f));
-//        plot.setDomainGridlinePaint(Color.blue);
-//        plot.setRangeGridlineStroke(new BasicStroke(0.0f));
-//        plot.setRangeMinorGridlineStroke(new BasicStroke(0.0f));
-//        plot.setRangeGridlinePaint(Color.blue);
-//
-//        plot.setDomainMinorGridlinesVisible(true);
-//        plot.setRangeMinorGridlinesVisible(true);
-        plot.setBackgroundPaint(Color.white);
-        plot.setDomainCrosshairVisible(true);
-        plot.setRangeCrosshairVisible(true);
-        plot.setRangeCrosshairPaint(Color.RED);
-        plot.setRangeCrosshairValue(0);
-        XYItemRenderer itemRenderer = plot.getRenderer();
+        plot.setDomainPannable(true);
+        plot.setRangePannable(true);
+        plot.setDomainZeroBaselineVisible(true);
+        plot.setRangeZeroBaselineVisible(true);
+
+        plot.setDomainGridlineStroke(new BasicStroke(0.0f));
+        plot.setDomainMinorGridlineStroke(new BasicStroke(0.0f));
+        plot.setDomainGridlinePaint(Color.blue);
+        plot.setRangeGridlineStroke(new BasicStroke(0.0f));
+        plot.setRangeMinorGridlineStroke(new BasicStroke(0.0f));
+        plot.setRangeGridlinePaint(Color.blue);
+
+        plot.setDomainMinorGridlinesVisible(true);
+        plot.setRangeMinorGridlinesVisible(true);
 
         XYLineAndShapeRenderer renderer
                 = (XYLineAndShapeRenderer) plot.getRenderer();
@@ -100,6 +94,7 @@ public class ScatterPlotDemo1 extends ApplicationFrame {
         chartPanel.setMouseWheelEnabled(true);
         return chartPanel;
     }
+
     /**
      * Starting point for the demonstration application.
      *

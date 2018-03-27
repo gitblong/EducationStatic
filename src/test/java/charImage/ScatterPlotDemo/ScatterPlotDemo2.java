@@ -52,6 +52,9 @@ public class ScatterPlotDemo2 extends ApplicationFrame {
         renderer.setDotWidth(2);
         renderer.setDotHeight(2);
         plot.setRenderer(renderer);
+
+
+
         NumberAxis domainAxis = (NumberAxis) plot.getDomainAxis();
         domainAxis.setAutoRangeIncludesZero(false);
         return chart;

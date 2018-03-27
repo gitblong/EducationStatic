@@ -72,7 +72,7 @@ import java.util.*;
 
             //x轴
             NumberAxis rangeAxis = (NumberAxis) plot.getRangeAxis();//坐标轴
-            rangeAxis.setTickUnit(new NumberTickUnit(100));
+//            rangeAxis.setTickUnit(new NumberTickUnit(100));
             rangeAxis.setRange(101,905);
             rangeAxis.setVisible(true);
             //柱状图渲染

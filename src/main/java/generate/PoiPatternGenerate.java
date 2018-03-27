@@ -89,7 +89,7 @@ public class PoiPatternGenerate {
         POIParagraphPattern.creParText(document, PatternOneText.getTwoTitleText3_1(contents.get(4)));
         //插入图片位置
         // 读取图片(参数为gif、jpg、png格式的图片都可以)，设置图片大小
-        ByteArrayOutputStream scatterOutputStream1 = OutputImage.getChartByteArray(ScatterChart.drawScatterChart(scatterEntityList.get(0)),IMAGEWIDTH,IMAGEHEIGHT);
+        ByteArrayOutputStream scatterOutputStream1 = OutputImage.getChartByteArray(ScatterChart.drawChart(scatterEntityList.get(0)),IMAGEWIDTH,IMAGEHEIGHT);
         String scatterBlipId1 = document.addPictureData(scatterOutputStream1.toByteArray(), Document.PICTURE_TYPE_PNG);
         document.createPicture(scatterBlipId1, Document.PICTURE_TYPE_PNG, IMAGEWIDTH, IMAGEHEIGHT);
 //        String blipId2 = document.addPictureData(new FileInputStream(new File(imagePaths.get(2))), Document.PICTURE_TYPE_PNG);
@@ -98,7 +98,7 @@ public class PoiPatternGenerate {
         POIParagraphPattern.creParText(document, PatternOneText.getTwoTitleText3_2(contents.get(4)));
         //插入图片位置
         // 读取图片(参数为gif、jpg、png格式的图片都可以)，设置图片大小
-        ByteArrayOutputStream scatterOutputStream2 = OutputImage.getChartByteArray(ScatterChart.drawScatterChart(scatterEntityList.get(1)),IMAGEWIDTH,IMAGEHEIGHT);
+        ByteArrayOutputStream scatterOutputStream2 = OutputImage.getChartByteArray(ScatterChart.drawChart(scatterEntityList.get(1)),IMAGEWIDTH,IMAGEHEIGHT);
         String scatterBlipId2 = document.addPictureData(scatterOutputStream2.toByteArray(), Document.PICTURE_TYPE_PNG);
         document.createPicture(scatterBlipId2, Document.PICTURE_TYPE_PNG, IMAGEWIDTH, IMAGEHEIGHT);
 //        String blipId3 = document.addPictureData(new FileInputStream(new File(imagePaths.get(3))), Document.PICTURE_TYPE_PNG);
@@ -129,7 +129,7 @@ public class PoiPatternGenerate {
         POIParagraphPattern.creParText(document, PatternOneText.getTwoTitleText3_1(contents.get(0)));
         //插入图片位置
         // 读取图片(参数为gif、jpg、png格式的图片都可以)，设置图片大小
-        ByteArrayOutputStream scatterOutputStream1 = OutputImage.getChartByteArray(ScatterChart.drawScatterChart(scatterEntityList.get(0)),IMAGEWIDTH,IMAGEHEIGHT);
+        ByteArrayOutputStream scatterOutputStream1 = OutputImage.getChartByteArray(ScatterChart.drawChart(scatterEntityList.get(0)),IMAGEWIDTH,IMAGEHEIGHT);
         String scatterBlipId1 = document.addPictureData(scatterOutputStream1.toByteArray(), Document.PICTURE_TYPE_PNG);
         document.createPicture(scatterBlipId1, Document.PICTURE_TYPE_PNG, IMAGEWIDTH, IMAGEHEIGHT);
 //        String blipId2 = document.addPictureData(new FileInputStream(new File(imagePaths.get(2))), Document.PICTURE_TYPE_PNG);
@@ -138,7 +138,7 @@ public class PoiPatternGenerate {
         POIParagraphPattern.creParText(document, PatternOneText.getTwoTitleText3_2(contents.get(0)));
         //插入图片位置
         // 读取图片(参数为gif、jpg、png格式的图片都可以)，设置图片大小
-        ByteArrayOutputStream scatterOutputStream2 = OutputImage.getChartByteArray(ScatterChart.drawScatterChart(scatterEntityList.get(1)),IMAGEWIDTH,IMAGEHEIGHT);
+        ByteArrayOutputStream scatterOutputStream2 = OutputImage.getChartByteArray(ScatterChart.drawChart(scatterEntityList.get(1)),IMAGEWIDTH,IMAGEHEIGHT);
         String scatterBlipId2 = document.addPictureData(scatterOutputStream2.toByteArray(), Document.PICTURE_TYPE_PNG);
         document.createPicture(scatterBlipId2, Document.PICTURE_TYPE_PNG, IMAGEWIDTH, IMAGEHEIGHT);
 //        String blipId3 = document.addPictureData(new FileInputStream(new File(imagePaths.get(3))), Document.PICTURE_TYPE_PNG);

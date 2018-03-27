@@ -49,18 +49,19 @@ public class ScatterEntity {
     }
 
 
+    private void setXValue() {
+
+        double min = Collections.min(Arrays.asList(ArrayUtils.toObject(this.x)));;
+        this.minDomain = min - 0.2;
+        double max = Collections.max(Arrays.asList(ArrayUtils.toObject(this.x)));
+        this.maxDomain= max + 0.2;
+    }
+
     private void setYValue() {
         double min = Collections.min(Arrays.asList(ArrayUtils.toObject(this.y)));;
         this.minRange = min - 20;
         double max = Collections.max(Arrays.asList(ArrayUtils.toObject(this.y)));
         this.maxRange = max + 20;
-    }
-
-    private void setXValue() {
-        double min = Collections.min(Arrays.asList(ArrayUtils.toObject(this.x)));;
-        this.minDomain = min - 0.2;
-        double max = Collections.max(Arrays.asList(ArrayUtils.toObject(this.x)));
-        this.maxDomain = max + 0.2;
     }
 
     public double[] getX() {

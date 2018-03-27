@@ -88,7 +88,7 @@ public class SingleBar {
         rangeAxis.setTickLabelFont(yfont);
         double maxRange = singleBarEntity.getMaxRange();
         if (singleBarEntity.getModel() == 1) {
-            rangeAxis.setTickUnit(new NumberTickUnit(0.1));
+//            rangeAxis.setTickUnit(new NumberTickUnit(0.1));
             rangeAxis.setNumberFormatOverride(NumberFormat.getPercentInstance());
             maxRange = maxRange+0.1;
             if (maxRange > 1) {
@@ -97,10 +97,10 @@ public class SingleBar {
         }else{
             categoryAxis.setCategoryLabelPositions(CategoryLabelPositions.UP_45);
             if (maxRange > 10) {
-                rangeAxis.setTickUnit(new NumberTickUnit(10));
+//                rangeAxis.setTickUnit(new NumberTickUnit(10));
                 maxRange = maxRange + 10;
             }else{
-                rangeAxis.setTickUnit(new NumberTickUnit(2));
+//                rangeAxis.setTickUnit(new NumberTickUnit(2));
                 maxRange = maxRange + 2;
             }
         }

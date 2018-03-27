@@ -70,6 +70,7 @@ public class ChartUtils {
 		chartTheme.setDomainGridlinePaint(new Color(255, 255, 255));// X坐标轴垂直网格颜
 		chartTheme.setRangeGridlinePaint(new Color(255, 255, 255));// Y坐标轴水平网格颜色
 
+
 		chartTheme.setBaselinePaint(Color.WHITE);
 		chartTheme.setCrosshairPaint(Color.BLUE);// 不确定含义
 		chartTheme.setAxisLabelPaint(new Color(51, 51, 51));// 坐标轴标题文字颜色

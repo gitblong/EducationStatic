@@ -9,6 +9,7 @@ import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
 import org.jfree.chart.axis.NumberAxis;
+import org.jfree.chart.axis.ValueAxis;
 import org.jfree.chart.plot.PlotOrientation;
 import org.jfree.chart.plot.XYPlot;
 import org.jfree.chart.plot.XYPlot;
@@ -127,10 +128,13 @@ public class ScatterPlotDemo4 extends JDialog {//ApplicationFrame {
         plot.setDomainCrosshairVisible(true);
         plot.setRangeCrosshairVisible(true);
 
+        ValueAxis valueAxis = plot.getDomainAxis();
+        valueAxis.setAxisLinePaint(new Color(0, 0, 0));
 
 // change the auto tick unit selection to integer units only...
         NumberAxis rangeAxis = (NumberAxis) plot.getRangeAxis();
         rangeAxis.setStandardTickUnits(NumberAxis.createIntegerTickUnits());
+        rangeAxis.setAxisLinePaint(new Color(0));
 // OPTIONAL CUSTOMISATION COMPLETED.
 
         Axis axis = plot.getDomainAxis();

@@ -5,7 +5,7 @@
 //import javafx.scene.Group;
 //import javafx.scene.Scene;
 //import javafx.scene.chart.NumberAxis;
-//import javafx.scene.chart.ScatterChart;
+//import javafx.scene.chart.BubbleChart;
 //import javafx.scene.chart.XYChart;
 //import javafx.scene.control.Button;
 //import javafx.scene.layout.HBox;
@@ -24,8 +24,8 @@
 //    public void createChart(){
 //        final NumberAxis xAxis = new NumberAxis(0.5, 10, 1);
 //        final NumberAxis yAxis = new NumberAxis(0.5, 500, 100);
-//        final ScatterChart<Number,Number> sc =
-//                new ScatterChart<Number,Number>(xAxis,yAxis);
+//        final BubbleChart<Number,Number> sc =
+//                new BubbleChart<Number,Number>(xAxis,yAxis);
 //        xAxis.setLabel("Age (years)");
 //        yAxis.setLabel("Returns to date");
 //        sc.setTitle("Investment Overview");
@@ -71,8 +71,8 @@
 //     * @param args  ignored.
 //     */
 //    public static void main(String[] args) {
-//        ScatterPlotDemo1 demo = new ScatterPlotDemo1(
-//                "JFreeChart: ScatterPlotDemo1.java");
+//        ScatterChart demo = new ScatterChart(
+//                "JFreeChart: ScatterChart.java");
 //        demo.pack();
 //        RefineryUtilities.centerFrameOnScreen(demo);
 //        demo.setVisible(true);
